@@ -6,15 +6,16 @@ def main():
 	min = 1
 	max = 6
 
-	roll_again = "yes"
-	while roll_again == "yes" or roll_again == "y":
-		print("Roling the diced...")
-		time.sleep(5)
-		print("The value are...")
+	roll_again = "tak"
+	while roll_again == "tak":
+		print("Rzucam kostka...")
 		time.sleep(2)
-		print(random.randint(min,max))
+		print("Kostka turtla sie...")
+		time.sleep(2)
+		wynik = random.randint(min,max)		
+		print("Wynik to: ", wynik)
 	
-		roll_again = input("Roll the dice again? (yes/y or no/n): ")
+		roll_again = input("Rzucic kostka jeszcze raz? (tak/nie): ")
 
 if __name__ == '__main__':
 	main()
